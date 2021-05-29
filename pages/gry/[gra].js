@@ -99,28 +99,28 @@ const Gra = () => {
 
   return (
     <Szkielet>
-      {<h1>{planszowka.tytul}</h1>}
+      {<h1>{planszowka?.tytul}</h1>}
       <Rzad>
-        <Opis>{planszowka.opis}</Opis>
+        <Opis>{planszowka?.opis}</Opis>
         <Informacje>
           <p>
-            <Czas /> {planszowka.minCzas} - {planszowka.maxCzas} min
+            <Czas /> {planszowka?.minCzas} - {planszowka?.maxCzas} min
           </p>
           <p>
-            <Ludzie /> {planszowka.minGraczy} - {planszowka.maxGraczy} osób
+            <Ludzie /> {planszowka?.minGraczy} - {planszowka?.maxGraczy} osób
           </p>
           <p>
-            <Wiek /> {planszowka.minWiek} lat +
+            <Wiek /> {planszowka?.minWiek} lat +
           </p>
         </Informacje>
       </Rzad>
-      <Zdjecie src={planszowka.zdj} />
+      <Zdjecie src={planszowka?.zdj} />
       <p>
         <span style={{ fontWeight: "bold" }}>Gatunek:</span>{" "}
-        {planszowka.gatunek}
+        {planszowka?.gatunek}
       </p>
 
-      <KupTeraz target="_blank" href={planszowka.link}>
+      <KupTeraz target="_blank" href={planszowka?.link}>
         Sprawdź oferty
       </KupTeraz>
     </Szkielet>
