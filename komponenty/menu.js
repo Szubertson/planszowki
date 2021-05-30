@@ -8,6 +8,7 @@ import { DownArrow } from "@styled-icons/boxicons-solid/DownArrow";
 import { gry } from "../dane/gry";
 import { MenuOutline } from "@styled-icons/evaicons-outline/MenuOutline";
 import { CloseOutline } from "@styled-icons/evaicons-outline/CloseOutline";
+import { useRouter } from "next/router";
 const Strzalka = styled(DownArrow)`
   height: 16px;
 `;
@@ -141,15 +142,16 @@ const Odwiedziny = styled.span`
 `;
 
 const Menu = (props) => {
+  const router = useRouter();
+  console.log(router);
   const [expanded, setExpanded] = useState(false);
   const [count, setCount] = useState(0);
-  console.log(count);
 
   const fetchCount = async () => {
     const result = await axios.get(
       "https://api.countapi.xyz/update/planszowki/planszowki?amount=1"
     );
-    console.log(result);
+
     setCount(result.data.value);
     return result.data.value;
   };
@@ -185,9 +187,12 @@ const Menu = (props) => {
           <ElementListy aktywny={props.widok === "kontakt"}>
             <Link href="/kontakt">Kontakt</Link>
           </ElementListy>
-          {/* <ElementListy aktywny={props.widok === "kontakt"}>
-            <Link href="/kontakt">Rysunek ( Canvas)</Link>
-          </ElementListy> */}
+          <ElementListy aktywny={props.widok === "zrodla"}>
+            <Link href="/zrodla">Źródła</Link>
+          </ElementListy>
+          <ElementListy aktywny={props.widok === "canvas"}>
+            <Link href="/canvas">Canvas</Link>
+          </ElementListy>
         </Lista>
         <Godzina />
         <Odwiedziny>

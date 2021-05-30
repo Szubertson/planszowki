@@ -233,6 +233,7 @@ export default function Home() {
       <map name="marvel">
         <area
           shape="rect"
+          target="_blank"
           coords="-1, -2, 148, 106"
           href="https://pl.wikipedia.org/wiki/Thor_(Marvel)"
           title="new"
@@ -240,24 +241,28 @@ export default function Home() {
         ></area>
         <area
           shape="rect"
+          target="_blank"
           coords="2, 138, 96, 263"
           href="https://pl.wikipedia.org/wiki/Scarlet_Witch"
           target="_blank"
         ></area>
         <area
           shape="rect"
+          target="_blank"
           coords="266, 106, 393, 257"
           href="https://pl.wikipedia.org/wiki/Iron_Man"
           target="_blank"
         />
         <area
           shape="rect"
+          target="_blank"
           coords="186, 1, 397, 103"
           href="https://pl.wikipedia.org/wiki/Spider-Man"
           target="_blank"
         ></area>
         <area
           shape="rect"
+          target="_blank"
           coords="99, 103, 265, 253"
           href="https://pl.wikipedia.org/wiki/Kapitan_Ameryka"
           terget="_blank"
@@ -265,7 +270,7 @@ export default function Home() {
       </map>
       <img
         style={{ width: "400px", height: "260px" }}
-        usemap="#marvel"
+        useMap="#marvel"
         src="https://filmschoolrejects.com/wp-content/uploads/2018/04/the-avengers-comics.jpg"
         alt="avengers image"
       />

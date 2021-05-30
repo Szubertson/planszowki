@@ -114,7 +114,7 @@ const Gra = () => {
           </p>
         </Informacje>
       </Rzad>
-      <Zdjecie src={planszowka?.zdj} />
+      <Zdjecie key={planszowka.id} src={planszowka?.zdj} />
       <p>
         <span style={{ fontWeight: "bold" }}>Gatunek:</span>{" "}
         {planszowka?.gatunek}
