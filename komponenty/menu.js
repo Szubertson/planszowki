@@ -185,6 +185,9 @@ const Menu = (props) => {
           <ElementListy aktywny={props.widok === "kontakt"}>
             <Link href="/kontakt">Kontakt</Link>
           </ElementListy>
+          {/* <ElementListy aktywny={props.widok === "kontakt"}>
+            <Link href="/kontakt">Rysunek ( Canvas)</Link>
+          </ElementListy> */}
         </Lista>
         <Godzina />
         <Odwiedziny>

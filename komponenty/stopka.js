@@ -9,6 +9,11 @@ const Kontener = styled.div`
   padding-right: 64px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: max-content;
+  }
 `;
 
 const Stopka = () => {

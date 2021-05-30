@@ -11,4 +11,7 @@ export const ciekawostki = [
   {
     text: "Najsłynniejszy geniusz świata, Albert Einstein, nie był fanem gier. W wywiadzie dla New York Timesa z 1936, powiedział nawet, że nie ma czasu na takie rozrywki. Zbyt ważna była dla niego praca, która pochłaniała prawie cały jego czas. W szachy jednak grywał, głównie za sprawą swojego serdecznego przyjaciela, Emanuela Laskera, mistrza świata w szachach, który tytuł ten zachowywał najdłużej w historii – 26 lat i 337 dni! Słynna jest zwłaszcza szachowa partia Einsteina z Oppenheimerem. Einstein zniszczył przeciwnika świetną taktyczną wizją i zmusił Oppenheimera do rezygnacji po zaledwie 24 ruchach.",
   },
+  {
+    text: "Poker jest najpopularniejszą grą karcianą na świecie. Mistrzowie pokera mają opanowany rachunek prawdopodobieństwa do perfekcji, który pomaga określić szansę na wygraną. Liczba wszystkich możliwości układów kart wynosi 2 598 960. Prawdopodobieństwo uzyskania „z ręki” „wysokiej karty” wynosi 50,118 %, uzyskania „pary” 42.257%, uzyskania „dwóch par” 4.754%, uzyskania „trójki” 2.113%, uzyskania „stritu” 0.392%, uzyskania „koloru” 0.197%, uzyskania „fulla” 0.144%, uzyskania „karety” 0.024%, uzyskania „pokera”, i w końcu prawdopodobieństwo uzyskania „z ręki” „pokera królewskiego” wynosi 0.000154%.",
+  },
 ];
